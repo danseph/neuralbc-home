@@ -1,0 +1,159 @@
+@import "../../style/abstracts/mixins";
+
+.main {
+  @include layout;
+  padding: 280px 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @include mq {
+    padding: 218px 25px 100px;
+    flex-direction: column;
+  }
+
+
+  .logo {
+    width: 480px;
+
+    @include mq {
+      width: 205px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .txt {
+    width: 380px;
+    @include mq {
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    strong {
+      @include titleFont( 2.1rem );
+
+      @include mq {
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    p {
+      margin-top: 10px;
+      @include descFont;
+
+      @include mq {
+        line-height: 2.2rem;
+      }
+    }
+  }
+}
+
+.about {
+  &-wrap {
+    width: 100%;
+    background: url("../../img/main_bg.jpg") no-repeat top center / cover;
+
+    @include mq {
+      background-size: 200%;
+    }
+  }
+  @include layout;
+  padding: 180px 40px 250px;
+  position: relative;
+
+  @include mq {
+    padding: 100px 0 0;
+  }
+
+  .img-box {
+    width: 480px;
+    position: absolute;
+    top: 147px;
+    right: 8%;
+
+    @include mq {
+      width: 100%;
+      height: 700px;
+      position: relative;
+      top: 0;
+      right: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      width: 100%;
+      @include mq {
+        width: 160%;
+        display: block;
+      }
+    }
+  }
+
+  .txt-box {
+    width: 100%;
+    padding: 80px 100px;
+    background-color: #FFF;
+    box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.05);
+
+    @include mq {
+      padding: 55px 30px;
+      box-shadow: none;
+      position: absolute;
+      top: 208px;
+      left: 50%;
+      margin-left: -135px;
+      z-index: 2;
+      width: 270px;
+    }
+
+    strong {
+      display: block;
+      width: 39%;
+      padding-bottom: 42px;
+      @include titleFont( 4rem );
+      position: relative;
+
+      @include mq {
+        width: 205px;
+        font-size: 22px;
+        padding-bottom: 30px;
+      }
+
+      &::after {
+        display: block;
+        content: "";
+        width: 110px;
+        height: 2px;
+        background-color: #3E3E3E;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        @include mq {
+          width: 45px;
+          height: 1px;
+        }
+      }
+    }
+
+    p {
+      margin-top: 42px;
+      width: 39%;
+      @include descFont;
+
+      @include mq {
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+  }
+
+}

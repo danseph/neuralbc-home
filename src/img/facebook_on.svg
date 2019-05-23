@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>sns-Facebook2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sns-Facebook2">
+            <rect id="Rectangle-Copy-8" fill="#8C8C8C" x="0" y="0" width="30" height="30"></rect>
+            <g id="facebook-f" transform="translate(10.000000, 5.000000)" fill="#272727">
+                <g transform="translate(0.625000, 0.000000)" id="Path">
+                    <path d="M8.49771415,3.32002491 L10.375,3.32002491 L10.375,0.140029655 C9.46606544,0.045376813 8.55279021,-0.0013542804 7.63895573,2.98641309e-05 C4.92288258,2.98641309e-05 3.06556785,1.66002739 3.06556785,4.70002285 L3.06556785,7.32001893 L0,7.32001893 L0,10.8800136 L3.06556785,10.8800136 L3.06556785,20 L6.74025505,20 L6.74025505,10.8800136 L9.79583734,10.8800136 L10.2551732,7.32001893 L6.74025505,7.32001893 L6.74025505,5.05002232 C6.74025505,4.00002389 7.01985082,3.32002491 8.49771415,3.32002491 Z" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

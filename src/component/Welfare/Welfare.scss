@@ -1,0 +1,94 @@
+@import "../../style/abstracts/mixins";
+
+.welfare {
+  &-wrap {
+    width: 100%;
+  }
+
+  @include layout;
+  padding: 200px 40px;
+  position: relative;
+
+  @include mq {
+    padding: 65px 0 60px;
+    overflow: hidden;
+  }
+
+  h2 {
+    @include titleFont( 2.2rem );
+    position: absolute;
+    top: 232px;
+    right: 40px;
+
+    @include mq {
+      position: relative;
+      top: 0;
+      right: auto;
+      left: 25px;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  .img-box {
+    width: 69%;
+    height: 486px;
+    overflow: hidden;
+
+    @include mq {
+      width: 85%;
+      height: auto;
+    }
+
+    img {
+      width: 100%;
+      @include mq {
+        width: 130%;
+      }
+    }
+  }
+
+  .txt-box {
+    width: 520px;
+    padding: 70px 50px;
+    background-color: #272727;
+    position: absolute;
+    top: 282px;
+    right: 40px;
+    z-index: 2;
+
+    @include mq {
+      width: 272px;
+      top: -80px;
+      right: 0;
+      left: calc(100% - 272px);
+      padding: 40px 30px;
+      position: relative;
+    }
+
+    em {
+      @include titleFont( 4rem );
+      color: #FFF;
+
+      @include mq {
+        font-size: 2.6rem;
+      }
+    }
+
+    strong {
+      display: block;
+      font-size: 3.8rem;
+      font-weight: 700;
+      color: #FFF;
+
+      @include mq {
+        font-size: 2.6rem;
+      }
+    }
+
+    p {
+      margin-top: 24px;
+      @include descFont( #FFF );
+    }
+  }
+}

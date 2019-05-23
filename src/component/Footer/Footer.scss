@@ -1,0 +1,73 @@
+@import "../../style/abstracts/mixins";
+
+.footer {
+  &-wrap {
+    width: 100%;
+    background-color: #272727;
+  }
+
+  @include layout;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mq {
+    padding: 60px 25px 40px;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .sns-btn {
+    a {
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      margin-right: 44px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100%;
+
+      @include mq {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+      }
+
+      span {
+        @include invisible;
+      }
+    }
+
+    .youtube {
+      background-image: url("../../img/youtube.svg");
+    }
+
+    .twitter {
+      background-image: url("../../img/twitter.svg");
+    }
+
+    .facebook {
+      background-image: url("../../img/facebook.svg");
+    }
+  }
+
+  .copylight {
+    text-align: right;
+
+    @include mq {
+      text-align: left;
+      margin-top: 16px;
+    }
+
+    address {
+      font-size: 1.1rem;
+      line-height: 2;
+      color: #FFF;
+
+      @include mq {
+        font-size: 1rem;
+      }
+    }
+  }
+}

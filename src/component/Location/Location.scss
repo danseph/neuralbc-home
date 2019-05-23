@@ -1,0 +1,98 @@
+@import "../../style/abstracts/mixins";
+
+.location {
+  &-wrap {
+    width: 100%;
+    background-color: #272727;
+  }
+
+  @include layout;
+  padding: 200px 40px;
+  height: 870px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+
+  @include mq {
+    padding: 0;
+    height: auto;
+  }
+
+  .map-box {
+    width: 61%;
+    height: 470px;
+    position: absolute;
+    top: 200px;
+    right: 4%;
+
+    @include mq {
+      width: 100%;
+      height: 320px;
+      position: relative;
+      left: 0;
+      top: 0;
+      right: 0;
+    }
+
+    img {
+      width: 10px;
+    }
+  }
+
+  h2 {
+    @include titleFont( 4.8rem );
+    color: #FFF;
+
+    @include mq {
+      font-size: 1.8rem;
+      padding: 40px 25px 24px;
+    }
+  }
+
+  .txt-box {
+
+    @include mq {
+      padding: 0 25px;
+    }
+
+    .name {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #FFF;
+
+      @include mq {
+        font-size: 1.2rem;
+      }
+    }
+
+    p {
+      @include descFont( #FFF );
+      margin: 15px 0 30px;
+    }
+
+    .desc {
+      li {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+
+        strong {
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: #FFF;
+          display: block;
+          width: 100px;
+
+          @include mq {
+            font-size: 1.2rem;
+          }
+        }
+
+        span {
+          @include descFont( #FFF );
+        }
+      }
+    }
+  }
+}
