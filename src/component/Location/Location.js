@@ -56,14 +56,6 @@ class Location extends Component {
                 <strong>채용문의</strong>
                 <span>Jenny@neuralbc.com</span>
               </li>
-              <li>
-                <strong>Tel</strong>
-                <span>+82123 4567</span>
-              </li>
-              <li>
-                <strong>Email</strong>
-                <span>Jenny@neuralbc.com</span>
-              </li>
             </ul>
           </div>
         </div>

@@ -61,7 +61,7 @@ class Header extends Component {
       if( i !== 0){
         scrollUp[i] = this.props.heightArray[i] + scrollUp[i-1];
       }else{
-        scrollUp[i] = this.props.heightArray[i]
+        scrollUp[i] = (this.props.heightArray[i] - 100)
       }
     }    
     this.setState({isModify:true , scrollUp:scrollUp});
@@ -102,23 +102,23 @@ class Header extends Component {
               <a href="#" 
                 className={this.scrollEvent() === 'about' ? 'active' : ''}
                 onClick={() => scroll.scrollTo(0, this.closeMenuEvent())}
-              >About</a>
+              >ABOUT</a>
               <a href="#" 
                 className={this.scrollEvent() === 'features' ? 'active' : ''}
                 onClick={() => scroll.scrollTo(this.state.scrollUp[0], this.closeMenuEvent())}
-              >Features</a>
+              >FEATURES</a>
               <a href="#" 
                 className={this.scrollEvent() === 'life' ? 'active' : ''}
                 onClick={() => scroll.scrollTo(this.state.scrollUp[1], this.closeMenuEvent())}
-              >Life</a>
+              >WELFARE</a>
               <a href="#" 
                 className={this.scrollEvent() === 'careers' ? 'active' : ''}
                 onClick={() => scroll.scrollTo(this.state.scrollUp[2], this.closeMenuEvent())}
-              >Careers</a>
+              >CAREERS</a>
               <a href="#" 
                 className={this.scrollEvent() === 'location' ? 'active' : ''}
                 onClick={() => scroll.scrollTo(this.state.scrollUp[3], this.closeMenuEvent())}
-              >Location</a>
+              >LOCATION</a>
             </nav>
             <a href="#" className="btn-x" onClick={() => this.closeMenuEvent()}><span>닫기</span></a>
           </header>

@@ -88,7 +88,7 @@ class Welfare extends Component {
               <div className="img-box"><img src={ImgList.tmp_welfare4} alt="회사이미지"/></div>
               <div className="txt-box">
                 <em>04</em>
-                <strong>즐거운 휴식 =<br /> 효율 상승​</strong>
+                <strong>즐거운 휴식 <br /> = 효율 상승​</strong>
                 <p>
                   각종 엔터테인먼트, 캠핑 및 바비큐 시설, 주차 공간 지원​
                 </p>

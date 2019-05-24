@@ -47,7 +47,6 @@ class OnePage extends Component {
 
   handleScroll = () => {
     this.setState({lastScrollY : window.scrollY});
-    console.log(this.state.lastScrollY, "스크롤 높이")
   }
 
   render() {
