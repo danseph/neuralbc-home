@@ -8,9 +8,9 @@ class Footer extends Component {
       <div className="footer-wrap">
         <div className="footer">
           <div className="sns-btn">
-            <a href="#" className="youtube"><span>유튜브 바로가기</span></a>
+            {/* <a href="#" className="youtube"><span>유튜브 바로가기</span></a>
             <a href="#" className="twitter"><span>트위터 바로가기</span></a>
-            <a href="#" className="facebook"><span>패이스북 바로가기</span></a>
+            <a href="#" className="facebook"><span>패이스북 바로가기</span></a> */}
           </div>
           <div className="copylight">
             <address>

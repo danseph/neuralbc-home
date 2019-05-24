@@ -20,6 +20,7 @@ import twitter_on from '../img/twitter_on.svg';
 import facebook from '../img/facebook.svg';
 import facebook_on from '../img/facebook_on.svg';
 import mark from '../img/mark.svg';
+import pin from '../img/pin.svg';
 
 export const ImgList = { 
   logo_ico,
@@ -43,5 +44,6 @@ export const ImgList = {
   twitter_on,
   facebook,
   facebook_on,
-  mark
+  mark,
+  pin
 };

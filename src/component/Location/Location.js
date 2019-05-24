@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import { ImgList } from '../Img';
 import './Location.scss';
+
+const AnyReactComponent = () => <div className="marker-name"><img src={ImgList.pin} alt="이미지" /></div>;
 
 class Location extends Component {
 
@@ -41,8 +44,11 @@ class Location extends Component {
               bootstrapURLKeys={{ key: "AIzaSyBxMum7cw3fdySXBjfztMIPDmEQ3kpPd_c" }}
               defaultCenter={this.props.center}
               defaultZoom={this.props.zoom}
-              GoogleMapMarkers={'markers'}
             >
+              <AnyReactComponent
+                lat={37.514229}
+                lng={127.053460}
+              />
             </GoogleMapReact>
           </div>
           <h2>Contact Us</h2>
