@@ -4,6 +4,26 @@ import './Location.scss';
 
 class Location extends Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      height : 0,
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.updateHeight);
+
+    const height = this.location.clientHeight;
+    this.setState({ height });
+  }
+
+  updateHeight = () => {
+    const height = this.location.clientHeight;
+    this.setState({ height });
+  }
+
+
   static defaultProps = {
     center: {
       lat: 37.514229,
@@ -14,7 +34,7 @@ class Location extends Component {
 
   render() {
     return (
-      <div className="location-wrap">
+      <div className="location-wrap" ref={ (location) => this.location = location }>
         <div className="location">
           <div className="map-box">
             <GoogleMapReact

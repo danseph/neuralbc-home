@@ -10,7 +10,7 @@
   position: relative;
 
   @include mq {
-    padding: 65px 0 60px;
+    padding: 65px 0 80px;
     overflow: hidden;
   }
 
@@ -30,65 +30,92 @@
     }
   }
 
-  .img-box {
-    width: 69%;
-    height: 486px;
-    overflow: hidden;
+  .slide-box {
+    .swiper-pagination {
+      display: flex;
+      justify-content: flex-end;
+      z-index: 4;
 
-    @include mq {
-      width: 85%;
-      height: auto;
-    }
-
-    img {
-      width: 100%;
       @include mq {
-        width: 130%;
+        justify-content: center;
+      }
+
+      span {
+        width: 10px;
+        height: 10px;
+        border-radius: 0;
+        background-color: #ECECEC;
+        opacity: 1;
+
+        &.swiper-pagination-bullet-active {
+          background-color: #3E3E3E;
+        }
       }
     }
-  }
 
-  .txt-box {
-    width: 520px;
-    padding: 70px 50px;
-    background-color: #272727;
-    position: absolute;
-    top: 282px;
-    right: 40px;
-    z-index: 2;
+    .img-box {
+      width: 69%;
+      height: 486px;
+      overflow: hidden;
 
-    @include mq {
-      width: 272px;
-      top: -80px;
+      @include mq {
+        width: 85%;
+        height: auto;
+      }
+
+      img {
+        width: 100%;
+        @include mq {
+          width: 130%;
+        }
+      }
+    }
+
+    .txt-box {
+      width: 520px;
+      height: 340px;
+      padding: 70px 50px;
+      background-color: #272727;
+      position: absolute;
+      top: 73px;
       right: 0;
-      left: calc(100% - 272px);
-      padding: 40px 30px;
-      position: relative;
-    }
-
-    em {
-      @include titleFont( 4rem );
-      color: #FFF;
+      z-index: 2;
 
       @include mq {
-        font-size: 2.6rem;
+        width: 272px;
+        height: 250px;
+        top: -80px;
+        right: 0;
+        left: calc(100% - 272px);
+        padding: 40px 30px;
+        position: relative;
       }
-    }
 
-    strong {
-      display: block;
-      font-size: 3.8rem;
-      font-weight: 700;
-      color: #FFF;
+      em {
+        @include titleFont( 4rem );
+        color: #FFF;
 
-      @include mq {
-        font-size: 2.6rem;
+        @include mq {
+          font-size: 2.6rem;
+        }
       }
-    }
 
-    p {
-      margin-top: 24px;
-      @include descFont( #FFF );
+      strong {
+        display: block;
+        font-size: 3.8rem;
+        font-weight: 700;
+        color: #FFF;
+
+        @include mq {
+          font-size: 2.6rem;
+        }
+      }
+
+      p {
+        margin-top: 24px;
+        @include descFont( #FFF );
+      }
     }
   }
+
 }
