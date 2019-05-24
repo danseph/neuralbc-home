@@ -41,7 +41,7 @@ class Location extends Component {
         <div className="location">
           <div className="map-box">
             <GoogleMapReact
-              bootstrapURLKeys={{ key: "AIzaSyBxMum7cw3fdySXBjfztMIPDmEQ3kpPd_c" }}
+              bootstrapURLKeys={{ key: "AIzaSyCqlzBrI9Gxwh4bTQm65IPU6Y-l7AQbw6g" }}
               defaultCenter={this.props.center}
               defaultZoom={this.props.zoom}
             >
