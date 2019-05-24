@@ -60,7 +60,7 @@ class Location extends Component {
             <ul className="desc">
               <li>
                 <strong>채용문의</strong>
-                <span>Jenny@neuralbc.com</span>
+                <span>recruit@neuralbc.com</span>
               </li>
             </ul>
           </div>
