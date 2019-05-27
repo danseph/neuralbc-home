@@ -1,6 +1,5 @@
 import logo_ico from '../img/logo_ico.svg';
 import logo from '../img/logo.svg';
-import main_bg from '../img/main_bg.jpg';
 import tmp_about from '../img/tmp_about.jpg';
 import tmp_feature1 from '../img/tmp_feature1.jpg';
 import tmp_feature2 from '../img/tmp_feature2.jpg';
@@ -24,8 +23,7 @@ import pin from '../img/pin.svg';
 
 export const ImgList = { 
   logo_ico,
-  logo, 
-  main_bg, 
+  logo,
   tmp_about,
   tmp_feature1,
   tmp_feature2,

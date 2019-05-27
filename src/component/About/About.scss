@@ -8,7 +8,7 @@
   align-items: center;
 
   @include mq {
-    padding: 218px 25px 100px;
+    padding: 240px 25px 30px;
     flex-direction: column;
   }
 
@@ -27,10 +27,11 @@
 
   .txt {
     width: 380px;
+
     @include mq {
       width: 100%;
       text-align: center;
-      margin-top: 30px;
+      margin-top: 120px;
     }
 
     strong {
@@ -47,7 +48,9 @@
       @include descFont;
 
       @include mq {
+        margin-top: 26px;
         line-height: 2.2rem;
+        font-size: 1rem;
       }
     }
   }
@@ -59,7 +62,7 @@
     background: url("../../img/main_bg.jpg") no-repeat top center / cover;
 
     @include mq {
-      background-size: 200%;
+      background: url("../../img/main_bg_m.png") no-repeat top center / 100%;
     }
   }
   @include layout;

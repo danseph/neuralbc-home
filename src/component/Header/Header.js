@@ -64,7 +64,7 @@ class Header extends Component {
         scrollUp[i] = (this.props.heightArray[i] - 100)
       }
     }    
-    this.setState({isModify:true , scrollUp:scrollUp});
+    this.setState({isModify: true , scrollUp: scrollUp});
   }
 
   // 모바일 메뉴 닫기
