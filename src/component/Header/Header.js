@@ -61,7 +61,7 @@ class Header extends Component {
       if( i !== 0){
         scrollUp[i] = this.props.heightArray[i] + scrollUp[i-1];
       }else{
-        scrollUp[i] = (this.props.heightArray[i] - 100)
+        scrollUp[i] = this.props.heightArray[i]
       }
     }    
     this.setState({isModify: true , scrollUp: scrollUp});
@@ -106,7 +106,7 @@ class Header extends Component {
               <a href="#" 
                 className={this.scrollEvent() === 'features' ? 'active' : ''}
                 onClick={() => scroll.scrollTo(this.state.scrollUp[0], this.closeMenuEvent())}
-              >FEATURES</a>
+              >CULTURE</a>
               <a href="#" 
                 className={this.scrollEvent() === 'life' ? 'active' : ''}
                 onClick={() => scroll.scrollTo(this.state.scrollUp[1], this.closeMenuEvent())}

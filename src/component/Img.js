@@ -11,7 +11,6 @@ import tmp_welfare3 from '../img/tmp_welfare3.jpg';
 import tmp_welfare4 from '../img/tmp_welfare4.jpg';
 import tmp_welfare5 from '../img/tmp_welfare5.jpg';
 import tmp_welfare6 from '../img/tmp_welfare6.jpg';
-import tmp_welfare7 from '../img/tmp_welfare7.jpg';
 import youtube from '../img/youtube.svg';
 import youtube_on from '../img/youtube_on.svg';
 import twitter from '../img/twitter.svg';
@@ -35,7 +34,6 @@ export const ImgList = {
   tmp_welfare4,
   tmp_welfare5,
   tmp_welfare6,
-  tmp_welfare7,
   youtube,
   youtube_on,
   twitter,

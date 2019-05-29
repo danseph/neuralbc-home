@@ -53,11 +53,11 @@ class Location extends Component {
           </div>
           <h2>Contact Us</h2>
           <div className="txt-box">
-            <strong className="name">㈜뉴럴비씨</strong>
-            <p>
-              서울 강남구 봉은사로81길 15 11테라스
-            </p>
             <ul className="desc">
+              <li>
+                <strong>㈜뉴럴비씨</strong>
+                <span>서울 강남구 봉은사로81길 15 11테라스</span>
+              </li>
               <li>
                 <strong>채용문의</strong>
                 <span>recruit@neuralbc.com</span>

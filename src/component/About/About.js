@@ -31,7 +31,7 @@ class About extends Component {
             <img src={ImgList.logo} alt="neuralBC 로고"/>
           </div>
           <div className="txt">
-            <strong>The future is now  And We are making it</strong>
+            <strong>The Future is Now and We are Making It</strong>
             <p>
               오늘날 우리는 블록체인의 미래를 체감하고 있습니다.<br />
               사람과 삶을 발전시키고 불편을 해소하며 이러한 편리함이 우리의 삶에 안착할 수 있다고 믿습니다.
@@ -44,7 +44,7 @@ class About extends Component {
           </div>
           <div className="txt-box">
             <strong>
-              The evolution of blockchain technology
+              The Evolution of Blockchain Technology
             </strong>
             <p>
               ㈜뉴럴비씨는 인공지능과 블록체인 기술을 연구ㆍ개발하여​

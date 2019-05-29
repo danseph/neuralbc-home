@@ -41,7 +41,7 @@
 
     .marker-name {
       img {
-        width: 16px;
+        width: 14px;
         position: absolute;
         left: -4px;
         top: -28px;
@@ -65,33 +65,17 @@
       padding: 0 25px;
     }
 
-    .name {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #FFF;
-
-      @include mq {
-        font-size: 1.2rem;
-      }
-    }
-
-    p {
-      @include descFont( #FFF );
-      margin: 15px 0 30px;
-    }
-
     .desc {
       li {
         margin-top: 8px;
-        display: flex;
-        align-items: center;
 
         strong {
-          font-size: 1.3rem;
+          font-size: 1.6rem;
           font-weight: 700;
           color: #FFF;
           display: block;
           width: 100px;
+          margin-bottom: 20px;
 
           @include mq {
             font-size: 1.2rem;
@@ -101,6 +85,10 @@
         span {
           @include descFont( #FFF );
         }
+      }
+
+      li + li {
+        margin-top: 30px;
       }
     }
   }

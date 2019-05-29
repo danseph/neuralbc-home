@@ -50,14 +50,14 @@ class Welfare extends Component {
     return (
       <div className="welfare-wrap" ref={ (welfare) => this.welfare = welfare }>
         <div className="welfare">
-          <h2>Company welfare</h2>
+          <h2>Company Welfare</h2>
           <div className="slide-box">
           <Swiper {...params}>
             <div>
               <div className="img-box"><img src={ImgList.tmp_welfare1} alt="회사이미지"/></div>
               <div className="txt-box">
                 <em>01</em>
-                <strong>굶지 말고 일하세요</strong>
+                <strong>든든한 하루</strong>
                 <p>
                   조식ㆍ중식ㆍ석식ㆍ간식 제공<br />
                   카페테리아 운영
@@ -70,7 +70,8 @@ class Welfare extends Component {
                 <em>02</em>
                 <strong>자유로운 업무환경​</strong>
                 <p>
-                  격식이나 시스템보다 자유와 상식을 우선하는 회사
+                  격식이나 시스템보다 자유와<br />
+                  상식을 우선하는 회사
                 </p>
               </div>
             </div>
@@ -88,9 +89,9 @@ class Welfare extends Component {
               <div className="img-box"><img src={ImgList.tmp_welfare4} alt="회사이미지"/></div>
               <div className="txt-box">
                 <em>04</em>
-                <strong>즐거운 휴식 <br /> = 효율 상승​</strong>
+                <strong>자기계발 적극 지원​</strong>
                 <p>
-                  각종 엔터테인먼트, 캠핑 및 바비큐 시설, 주차 공간 지원​
+                  교육, 도서, 각종 세미나 참가 지원
                 </p>
               </div>
             </div>
@@ -98,9 +99,9 @@ class Welfare extends Component {
               <div className="img-box"><img src={ImgList.tmp_welfare5} alt="회사이미지"/></div>
               <div className="txt-box">
                 <em>05</em>
-                <strong>자기 계발<br/> 비용 제공​</strong>
+                <strong>Work and Life Balance</strong>
                 <p>
-                  교육, 도서, 각종 세미나 참가 지원​
+                  매달 1회 자유로운 맥주파티와 조기퇴근
                 </p>
               </div>
             </div>
@@ -108,19 +109,10 @@ class Welfare extends Component {
               <div className="img-box"><img src={ImgList.tmp_welfare6} alt="회사이미지"/></div>
               <div className="txt-box">
                 <em>06</em>
-                <strong>Work and Life Balance​</strong>
+                <strong>최상의 업무 인프라​</strong>
                 <p>
-                  매달 1회 자유로운 맥주파티와 조기퇴근​
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="img-box"><img src={ImgList.tmp_welfare7} alt="회사이미지"/></div>
-              <div className="txt-box">
-                <em>07</em>
-                <strong>최상의 업무 환경​</strong>
-                <p>
-                  최고 사양의 업무 장비 지원, 넓고 여유 있는 사무실​
+                  최고 사양의 업무 장비 지원<br />
+                  넓고 여유 있는 사무실
                 </p>
               </div>
             </div>

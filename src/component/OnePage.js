@@ -39,7 +39,7 @@ class OnePage extends Component {
         this.about.current.state.height,
         this.features.current.state.height,
         this.welfare.current.state.height,
-        this.careers.current.state.height,
+        (this.careers.current.state.height - 100),
         this.location.current.state.height
       ]
     })

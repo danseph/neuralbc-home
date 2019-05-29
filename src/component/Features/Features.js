@@ -44,7 +44,7 @@ class Features extends Component {
     return (
       <div className="features-wrap" ref={ (features) => this.features = features }>
         <div className="features">
-          <h2>Our<br /> Culture​</h2>
+          <h2>Our Culture​</h2>
           <div className="img-box">
             <Swiper {...params}>
               <div><img src={ImgList.tmp_feature1} alt="이미지"/></div>
