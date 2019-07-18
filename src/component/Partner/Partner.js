@@ -28,9 +28,12 @@ class Partner extends Component {
       <div className="partner-wrap" ref={ (partner) => this.partner = partner }>
         <div className="partner">
           <h2>Partner</h2>
-          <div className="logo">
-            <img src={ImgList.cosmicbc} alt="cosmicBC 로고"/>
-          </div>
+          <a href="http://cosmicbc.com/">
+            <div className="logo">
+              <img src={ImgList.cosmicbc} alt="cosmicBC 로고"/>
+            </div>
+          </a>
+
         </div>
       </div>
       
