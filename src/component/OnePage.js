@@ -4,6 +4,7 @@ import About from './About/About';
 import Features from './Features/Features';
 import Welfare from './Welfare/Welfare';
 import Careers from './Careers/Careers';
+import Partner from './Partner/Partner';
 import Location from './Location/Location';
 import Footer from './Footer/Footer';
 
@@ -18,6 +19,7 @@ class OnePage extends Component {
       features: this.features = React.createRef(),
       welfare: this.welfare = React.createRef(),
       careers: this.careers = React.createRef(),
+      partner: this.partner = React.createRef(),
       location: this.location = React.createRef(),
       heightArray: [],
     }
@@ -40,6 +42,7 @@ class OnePage extends Component {
         this.features.current.state.height,
         this.welfare.current.state.height,
         (this.careers.current.state.height - 100),
+        this.partner.current.state.height,
         this.location.current.state.height
       ]
     })
@@ -62,6 +65,8 @@ class OnePage extends Component {
         <Welfare ref={this.welfare}/>
 
         <Careers ref={this.careers}/>
+
+        <Partner ref={this.partner}/>
 
         <Location ref={this.location}/>
 

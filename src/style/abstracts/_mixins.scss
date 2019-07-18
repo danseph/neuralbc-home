@@ -15,7 +15,7 @@
 }
 
 @mixin titleFont( $font, $height: 1.4 ) {
-  font-family: "Lato";
+  font-family: "Lato-Heavy";
   font-size: $font;
   line-height: $height;
   font-weight: 900;

@@ -37,7 +37,7 @@ class Header extends Component {
 
   // 스크롤 높이별로 메뉴 active
   scrollEvent = () => {
-    var activeName = ['about', 'features', 'life', 'careers', 'location'];
+    var activeName = ['about', 'features', 'life', 'careers','partner', 'location'];
     var result = 'about';
 
     for(var i = 0; i< this.state.scrollUp.length; i++){
@@ -115,9 +115,13 @@ class Header extends Component {
                 className={this.scrollEvent() === 'careers' ? 'active' : ''}
                 onClick={() => scroll.scrollTo(this.state.scrollUp[2], this.closeMenuEvent())}
               >CAREERS</a>
+              {/* <a href="#" 
+                className={this.scrollEvent() === 'partner' ? 'active' : ''}
+                onClick={() => scroll.scrollTo(this.state.scrollUp[3], this.closeMenuEvent())}
+              >PARTNER</a> */}
               <a href="#" 
                 className={this.scrollEvent() === 'location' ? 'active' : ''}
-                onClick={() => scroll.scrollTo(this.state.scrollUp[3], this.closeMenuEvent())}
+                onClick={() => scroll.scrollTo(this.state.scrollUp[4], this.closeMenuEvent())}
               >LOCATION</a>
             </nav>
             <a href="#" className="btn-x" onClick={() => this.closeMenuEvent()}><span>닫기</span></a>

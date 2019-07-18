@@ -15,7 +15,7 @@ class Footer extends Component {
           <div className="copylight">
             <address>
               (주)뉴럴비씨  |  사업자등록번호 537-88-01038  |  대표 이두원<br />
-              &copy;2018 NeuralBC Pte., Ltd. All rights reserved.
+              &copy;2019 NeuralBC Pte., Ltd. All rights reserved.
             </address>
           </div>
         </div>

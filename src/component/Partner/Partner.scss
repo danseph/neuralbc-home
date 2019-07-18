@@ -1,0 +1,50 @@
+@import "../../style/abstracts/mixins";
+
+.partner {
+  &-wrap {
+    width: 100%;
+  }
+
+  @include layout;
+  padding: 180px 0 70px;
+  text-align: center;
+
+  @include mq {
+    padding: 80px 25px
+  }
+
+  h2 {
+    @include titleFont( 4.8rem );
+    text-align: center;
+
+    @include mq {
+      font-size: 2.2rem;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      width: 90px;
+      height: 1px;
+      background-color: #3E3E3E;
+      margin: 30px auto 90px;
+    
+      @include mq {
+        width: 45px;
+        height: 1px;
+      }
+    }
+  }
+
+  .logo {
+    width: 20rem;
+    text-align: center;
+    margin: 70px auto 70px;
+    @include mq {
+      width: 10rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

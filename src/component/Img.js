@@ -19,6 +19,7 @@ import facebook from '../img/facebook.svg';
 import facebook_on from '../img/facebook_on.svg';
 import mark from '../img/mark.svg';
 import pin from '../img/pin.svg';
+import cosmicbc from '../img/cosmicbc.png';
 
 export const ImgList = { 
   logo_ico,
@@ -41,5 +42,6 @@ export const ImgList = {
   facebook,
   facebook_on,
   mark,
-  pin
+  pin,
+  cosmicbc
 };
