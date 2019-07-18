@@ -115,10 +115,10 @@ class Header extends Component {
                 className={this.scrollEvent() === 'careers' ? 'active' : ''}
                 onClick={() => scroll.scrollTo(this.state.scrollUp[2], this.closeMenuEvent())}
               >CAREERS</a>
-              {/* <a href="#" 
+              <a href="#" 
                 className={this.scrollEvent() === 'partner' ? 'active' : ''}
                 onClick={() => scroll.scrollTo(this.state.scrollUp[3], this.closeMenuEvent())}
-              >PARTNER</a> */}
+              >PARTNER</a>
               <a href="#" 
                 className={this.scrollEvent() === 'location' ? 'active' : ''}
                 onClick={() => scroll.scrollTo(this.state.scrollUp[4], this.closeMenuEvent())}
